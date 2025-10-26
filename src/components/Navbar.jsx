@@ -1,6 +1,4 @@
-﻿﻿// src/components/Navbar.jsx
-
-import React, { useState } from 'react';
+﻿﻿import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { NavLink as RouterNavLink } from 'react-router-dom';
 import { Navbar, Nav, Container, Offcanvas, Button } from 'react-bootstrap';

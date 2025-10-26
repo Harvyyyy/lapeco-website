@@ -1,15 +1,8 @@
-// src/components/Chatbot.jsx
-
-import React, { useState, useEffect, useRef } from 'react';
+﻿import React, { useState, useEffect, useRef } from 'react';
 import { chatbotData } from '../data/chatbotData';
 import { faqData } from '../data/faqData';
 import './Chatbot.css';
 
-/**
- * Renders a modern, interactive chatbot component.
- * @param {object} props - The component props.
- * @param {function} props.onClose - Function to call to close the chatbot window.
- */
 export default function Chatbot({ onClose }) {
   // State for the chat message history
   const [messages, setMessages] = useState([]);
@@ -83,7 +76,6 @@ export default function Chatbot({ onClose }) {
   return (
     <div className="chatbot-container">
       <header className="chatbot-header">
-        {/* The updated header with a title and subtitle */}
         <div>
           <h3>
             <i className="bi bi-robot"></i> 
@@ -103,7 +95,6 @@ export default function Chatbot({ onClose }) {
             <div className="message-content">{msg.text}</div>
           </div>
         ))}
-        {/* The typing indicator is shown conditionally */}
         {isTyping && (
           <div className="message bot-message">
             <span className="avatar"><i className="bi bi-robot"></i></span>
